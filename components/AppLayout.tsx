@@ -14,7 +14,13 @@ const { Header, Sider, Content } = Layout;
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [collapsed, setCollapsed] = useState(false);
+
+  const [collapsed, setCollapsed] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 1000;
+    }
+    return true; // default when server-rendering
+  });
   const [isMobile, setIsMobile] = useState(false);
 
   const menuItems = [
