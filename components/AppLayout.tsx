@@ -5,8 +5,6 @@ import {
   AppstoreOutlined,
   UserOutlined,
   CalendarOutlined,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
