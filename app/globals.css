@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+:root {
+    --font-nunito: 'Nunito Sans', sans-serif;
+}
 
 html,
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f9fc;
+    font-family: var(--font-nunito);
+    background-color: #F7F9F8;
     margin: 0;
     padding: 0;
-    color: #1a1a1a;
+    color: #2E3D3A;
+}
+
+.ant-typography,
+.ant-btn,
+.ant-input,
+.ant-select,
+.ant-table,
+.ant-form,
+.ant-menu,
+.ant-pagination {
+    font-family: var(--font-nunito) !important;
 }
 
 .custom-table {
@@ -14,12 +27,3 @@ body {
     z-index: 1,
 }
 
-.table-row-light {
-    background-color: #ffffff;
-    /* white or base color */
-}
-
-.table-row-dark {
-    background-color: #fafafa;
-    /* very light gray */
-}
