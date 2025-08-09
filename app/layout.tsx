@@ -1,11 +1,13 @@
+import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+
+import AppLayout from "@/components/AppLayout";
+import ApolloWrapper from "@/components/ApolloWrapper";
+
 export const metadata = {
   title: "Clinic App",
   description: "Manage Patients and Appointments",
 };
-
-import AppLayout from "@/components/AppLayout";
-import ApolloWrapper from "@/components/ApolloWrapper";
 
 export default function RootLayout({
   children,

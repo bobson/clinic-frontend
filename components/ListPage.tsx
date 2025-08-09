@@ -126,14 +126,16 @@ export default function ListPage<T, ExtraProps>({
           </Col>
         </Row>
 
-        <Table
-          loading={loading}
-          dataSource={data}
-          rowKey={rowKey}
-          columns={extendedColumns}
-          scroll={{ x: 500 }}
-          pagination={{ pageSize: 5 }}
-        />
+        <div className="custom-table">
+          <Table
+            loading={loading}
+            dataSource={data}
+            rowKey={rowKey}
+            columns={extendedColumns}
+            scroll={{ x: 500 }}
+            pagination={{ pageSize: 5 }}
+          />
+        </div>
 
         <Drawer
           title={

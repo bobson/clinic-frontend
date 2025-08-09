@@ -90,6 +90,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             padding: "0 24px",
             fontWeight: "bold",
             fontSize: "18px",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+            zIndex: 1,
           }}
         >
           <Link href="/" style={{ color: "#000", textDecoration: "none" }}>
