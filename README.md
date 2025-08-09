@@ -29,6 +29,10 @@ When first open the app please wait 1 minute to activate the server host for the
 
 Click [here](https://clinic-frontend-zeta.vercel.app/) for the live demo URL.
 
+## Backend repo
+
+[This](https://github.com/bobson/clinic-backend) is the backend repo that I made for this app if you want to check it out.
+
 ## Getting Started
 
 ### Prerequisites
