@@ -2,6 +2,10 @@
 
 This is the frontend application for the Clinic Admin Panel built with Next.js and TypeScript. It allows users to manage patients and appointments seamlessly.
 
+## Note
+
+When first open the app please wait 1 minute to activate the server host for the backend data to be fetch, because I am using free hosting provider.
+
 ## Technologies Used
 
 - **Next.js** — React framework for server-side rendering and routing.
@@ -23,7 +27,7 @@ This is the frontend application for the Clinic Admin Panel built with Next.js a
 
 ## Live Demo
 
-[Coming Soon](#) — The live demo URL will be added here once deployed.
+[https://clinic-frontend-zeta.vercel.app/](#) — Live demo URL.
 
 ## Getting Started
 
