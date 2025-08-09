@@ -27,7 +27,7 @@ When first open the app please wait 1 minute to activate the server host for the
 
 ## Live Demo
 
-Click [here] for the live demo URL.(https://clinic-frontend-zeta.vercel.app/)
+Click [here](https://clinic-frontend-zeta.vercel.app/) for the live demo URL.
 
 ## Getting Started
 
