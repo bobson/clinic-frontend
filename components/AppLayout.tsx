@@ -15,12 +15,7 @@ const { Header, Sider, Content } = Layout;
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  const [collapsed, setCollapsed] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.innerWidth < 1000;
-    }
-    return true; // default when server-rendering
-  });
+  const [collapsed, setCollapsed] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
   const menuItems = [
@@ -51,13 +46,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     <Layout style={{ minHeight: "100vh" }}>
       <Sider
         breakpoint="lg"
-        collapsed={collapsed}
+        collapsedWidth="0"
         onBreakpoint={(broken) => {
-          setIsMobile(broken);
           setCollapsed(broken);
+          setIsMobile(broken);
         }}
-        onCollapse={(value) => setCollapsed(value)}
-        collapsedWidth={0} // ensures hamburger menu on small screens
+        onCollapse={(collapse) => setCollapsed(collapse)}
+        collapsed={collapsed}
       >
         <div
           style={{

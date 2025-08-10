@@ -19,7 +19,7 @@ export interface Appointment {
 }
 
 export interface AddAppointmentInput {
+  date: string;
+  reason: string;
   patientId: string;
-  date: string | Date; // Date picker returns a Date or dayjs object, convert as needed
-  notes?: string;
 }

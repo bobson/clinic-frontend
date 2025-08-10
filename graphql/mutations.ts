@@ -47,6 +47,10 @@ export const UPDATE_APPOINTMENT = gql`
       id
       date
       reason
+      patient {
+        id
+        name
+      }
     }
   }
 `;
